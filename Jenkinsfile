@@ -19,7 +19,7 @@
             steps{
                script{
 
-                     sh './mvnw clean test'
+                     mvnTest()
                }
        }  
      }
