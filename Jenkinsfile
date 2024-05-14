@@ -19,7 +19,9 @@
             steps{
                script{
 
-                    sh "${env.MAVEN_HOME}/bin/mvn clean test"
+                    sh """
+                     sudo mvnTest()
+                    """
                }
        }  
      }
