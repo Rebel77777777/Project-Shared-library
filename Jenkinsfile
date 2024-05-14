@@ -6,9 +6,10 @@
     stage("POLL SCM"){
       steps {
         script{ 
-           gitcheckout {
-             branch: "main",
-             url : "https://github.com/Rebel77777777/Project-Shared-library.git"
+            gitCheckout(
+                branch: "main",
+                url: "https://github.com/vikash-kumar01/mrdevops_java_app.git"
+            )
      }
     }
    }
