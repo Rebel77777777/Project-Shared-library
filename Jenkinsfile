@@ -19,9 +19,7 @@
             steps{
                script{
 
-                    sh """
-                      mvnTest()
-                    """
+                    sh mvnTest()
                }
        }  
      }
