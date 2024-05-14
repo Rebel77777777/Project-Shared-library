@@ -13,6 +13,13 @@
      }
     }
    }
-  }  
+  
+    stage("UNIT-TEST-MAVEN"){
+      steps {
+        script{ 
+          mvnTest()
+       }  
+     }
+    }
+   }
  }
-
