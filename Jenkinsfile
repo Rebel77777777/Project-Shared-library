@@ -3,10 +3,11 @@ pipeline {
 
   stages {
    stage("POLL SCM"){
-     steps """
-
-      
-     """
+     steps {
+       script{ 
+          git branch: 'main', url: 'https://github.com/Rebel77777777/Project-Shared-library.git'
+       }
+        }
    }
     
   }
