@@ -16,10 +16,12 @@
   
     stage("UNIT-TEST-MAVEN"){
       steps {
-        script{ 
-          mvnTest()
+         script{
+                   
+                   mvnTest()
+               }
        }  
      }
     }
    }
- }
+
