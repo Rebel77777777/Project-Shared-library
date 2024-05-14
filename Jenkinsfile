@@ -14,10 +14,11 @@
     }
    }
   
-    stage("UNIT-TEST-MAVEN"){
-      steps {
-         script{
-                   
+   stage('Unit Test maven'){
+
+            steps{
+               script{
+
                    mvnTest()
                }
        }  
