@@ -20,7 +20,7 @@
                script{
 
                     sh """
-                     sudo mvnTest()
+                      mvnTest()
                     """
                }
        }  
