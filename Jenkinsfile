@@ -19,7 +19,7 @@
             steps{
                script{
 
-                    sh './mvnw clean test'
+                    sh "${env.MAVEN_HOME}/bin/mvn clean test"'
                }
        }  
      }
