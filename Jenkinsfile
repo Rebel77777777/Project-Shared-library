@@ -27,11 +27,10 @@
 
             steps{
                script{
-
-                     mvnIntegrationTest()
+                   
+                   mvnIntegrationTest()
                }
-    
-    }
+            }
    }
    }
  }
