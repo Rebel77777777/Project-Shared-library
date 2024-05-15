@@ -10,11 +10,11 @@
                 branch: "main",
                 url: "https://github.com/Rebel77777777/Project-Shared-library.git"
             )
+      }
      }
-    }
-   }
+     }
   
-   stage('Unit Test maven'){
+    stage('Unit Test maven'){
 
             steps{
                script{
@@ -25,9 +25,17 @@
      }
 
    
+    stage('Integration Test maven'){
 
+            steps{
+                script{
+
+                     mvnIntegrationTest()
+               }
+         }  
+      }
     
-   }
- }
+     }
+  }
 
  
